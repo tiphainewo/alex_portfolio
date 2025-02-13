@@ -1,13 +1,14 @@
-
-import './App.css'
+import "./App.css";
+import Header from "./components/Header";
+import HomePage from "./HomePage";
 
 function App() {
-
   return (
-    <>
-      <div className='w-screen  text-center'>Coucou, bienvenue sur mon super site :)</div>
-    </>
-  )
+    <div className="mx-10">
+      <Header />
+      <HomePage />
+    </div>
+  );
 }
 
-export default App
+export default App;
