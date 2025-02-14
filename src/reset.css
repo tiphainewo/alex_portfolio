@@ -1,38 +1,12 @@
-@import 'tailwindcss';
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
-
-@theme {
-  --color-*: initial;
-  --color-black: oklch(33.6% 0.042 269.3);
-  --color-cyan: oklch(79.1% 0.148 172.5);
-  --color-purple: oklch(65.3% 0.226 302.7);
-  --color-yellow: oklch(83.3% 0.17 90.6);
-  --color-cream: oklch(97.9% 0.03 106.9);
-  --color-red: oklch(oklch(67.4% 0.173 15.7));
-  --color-white: oklch(100% 0 0);
-
-  --font-sans: "Lexend";
-}
-
-.font-bold-shadow::before {
-  display: block;
-  content: attr(title);
-  font-weight: bold;
-  height: 1px;
-  color: transparent;
-  overflow: hidden;
-  visibility: hidden;
-}
-
 x-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* 2. Remove default margin
+/* 2. Remove default margin */
 * {
   margin: 0;
-} */
+}
 
 body {
   /* 3. Add accessible line-height */

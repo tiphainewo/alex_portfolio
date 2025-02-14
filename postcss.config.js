@@ -1,7 +1,6 @@
 export default {
   plugins: {
-    tailwindcss: {},
-    // autoprefixer: {},
+    '@tailwindcss/postcss': {},
 	"postcss-preset-env": {
       stage: 3, // Choisis le niveau de fonctionnalités CSS à activer (3 est recommandé)
       features: {
