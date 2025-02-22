@@ -2,14 +2,11 @@ import { ReactNode } from "react";
 
 type BaseBlockProps = {
   children: ReactNode;
-  width?: string;
-  height?: string;
+  customClasses?: string;
 };
 
-export default function BaseBlock({
-  children,
-  width = "auto",
-  height = "auto",
-}: BaseBlockProps) {
-  return <div className="bg-gray-400 rounded-md">{children}</div>;
+export default function BaseBlock({ children, customClasses }: BaseBlockProps) {
+  return (
+    <div className={`bg-purple rounded-lg ${customClasses}`}>{children}</div>
+  );
 }
