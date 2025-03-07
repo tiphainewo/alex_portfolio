@@ -7,6 +7,6 @@ type BaseBlockProps = {
 
 export default function BaseBlock({ children, customClasses }: BaseBlockProps) {
   return (
-    <div className={`bg-purple rounded-lg ${customClasses}`}>{children}</div>
+    <div className={`bg-purple rounded-lg overflow-clip ${customClasses}`}>{children}</div>
   );
 }

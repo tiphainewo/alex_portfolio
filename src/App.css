@@ -15,6 +15,10 @@
   --font-sans: "Lexend";
 }
 
+:root {
+  --color-black-transparent: oklch(33.6% 0.042 269.3 / 0)
+}
+
 .font-bold-shadow::before {
   display: block;
   content: attr(title);
