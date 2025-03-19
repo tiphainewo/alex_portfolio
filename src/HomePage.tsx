@@ -20,8 +20,8 @@ function HomePage() {
         <img src="hero_art.png" className="h-full w-full object-cover"/>
       </BaseBlock>
 
-      <BaseBlock customClasses="row-span-1 col-span-2 h-fit">
-        <div className="flex min-h-full min-w-1/2 items-center justify-center gap-8 m-8">
+      <BaseBlock customClasses="row-span-1 col-span-2">
+        <div className="flex min-h-full min-w-1/2 items-center justify-center gap-6 p-6 ">
           <SocialBlock
             icon="x"
             link="https://x.com/xeleph_"
@@ -45,27 +45,27 @@ function HomePage() {
         </div>
       </BaseBlock>
 
-      <BaseBlock customClasses="row-span-3 col-span-2">
+      <BaseBlock customClasses="row-span-3 col-span-2" link={"/gallery"}>
         <BlockContentImage title="Game art" shadowed image="game_art.png"/>
       </BaseBlock>
 
-      <BaseBlock customClasses="row-span-4 col-span-2">
+      <BaseBlock customClasses="row-span-4 col-span-2" link={"/gallery"}>
         <BlockContentImage title="Landscapes" shadowed image="icon_logo.png"/>
       </BaseBlock>
 
-      <BaseBlock customClasses="row-span-2 col-span-1">
+      <BaseBlock customClasses="row-span-2 col-span-1"  link={"/contact"}>
         <div className="text-center">Contact</div>
       </BaseBlock>
 
-      <BaseBlock customClasses="row-span-4 col-span-1">
-        <BlockContentImage title="And more !" shadowed image="icon_logo.png"/>
+      <BaseBlock customClasses="row-span-4 col-span-1" link={"/projects"}>
+        <BlockContentImage title="Projects" shadowed image="icon_logo.png"/>
       </BaseBlock>
 
-      <BaseBlock customClasses="row-span-2 col-span-1">
+      <BaseBlock customClasses="row-span-2 col-span-1" link={"https://itch.io/xeleph"}>
         <BlockContentImage title="Buy my asset packs" shadowed image="icon_logo.png"/>
       </BaseBlock>
 
-      <BaseBlock customClasses="row-span-2 col-span-1">
+      <BaseBlock customClasses="row-span-2 col-span-1" link={"/etsy"}>
         <div className="text-center">Shop</div>
       </BaseBlock>
 

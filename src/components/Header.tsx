@@ -6,6 +6,7 @@ function Header() {
       <img src="icon_logo.png" className="mr-auto max-h-full" />
       <HeaderChoice title={"Home"} link={"/"} />
       <HeaderChoice title={"Gallery"} link={"/gallery"} />
+      <HeaderChoice title={"Projects"} link={"/projects"} />
       <HeaderChoice title={"Shop"} link={"/shop"} />
       <HeaderChoice title={"Contact"} link={"/contact"} />
     </div>

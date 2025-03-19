@@ -19,6 +19,10 @@
   --color-black-transparent: oklch(33.6% 0.042 269.3 / 0)
 }
 
+/* html {
+  cursor: url('cursor.ico'), default;
+} */
+
 .font-bold-shadow::before {
   display: block;
   content: attr(title);
