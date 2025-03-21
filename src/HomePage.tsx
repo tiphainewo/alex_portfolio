@@ -17,7 +17,7 @@ function HomePage() {
       </BaseBlock>
 
       <BaseBlock customClasses="row-span-4 col-span-4">
-        <img src="hero_art.png" className="h-full w-full object-cover"/>
+        <img src="hero_art.png" className="h-full w-full object-cover" />
       </BaseBlock>
 
       <BaseBlock customClasses="row-span-1 col-span-2">
@@ -46,23 +46,34 @@ function HomePage() {
       </BaseBlock>
 
       <BaseBlock customClasses="row-span-3 col-span-2" link={"/gallery"}>
-        <BlockContentImage title="Game art" shadowed image="game_art.png"/>
+        <BlockContentImage title="Game art" shadowed image="game_art.png" />
       </BaseBlock>
 
       <BaseBlock customClasses="row-span-4 col-span-2" link={"/gallery"}>
-        <BlockContentImage title="Landscapes" shadowed image="icon_logo.png"/>
+        <BlockContentImage
+          title="Landscapes"
+          shadowed
+          image="landscape_art.jpg"
+        />
       </BaseBlock>
 
-      <BaseBlock customClasses="row-span-2 col-span-1"  link={"/contact"}>
+      <BaseBlock customClasses="row-span-2 col-span-1" link={"/contact"}>
         <div className="text-center">Contact</div>
       </BaseBlock>
 
       <BaseBlock customClasses="row-span-4 col-span-1" link={"/projects"}>
-        <BlockContentImage title="Projects" shadowed image="icon_logo.png"/>
+        <BlockContentImage title="Projects" shadowed image="projects_art.jpg" />
       </BaseBlock>
 
-      <BaseBlock customClasses="row-span-2 col-span-1" link={"https://itch.io/xeleph"}>
-        <BlockContentImage title="Buy my asset packs" shadowed image="icon_logo.png"/>
+      <BaseBlock
+        customClasses="row-span-2 col-span-1"
+        link={"https://itch.io/xeleph"}
+      >
+        <BlockContentImage
+          title="Buy my asset packs"
+          shadowed
+          image="game_art.png"
+        />
       </BaseBlock>
 
       <BaseBlock customClasses="row-span-2 col-span-1" link={"/etsy"}>
@@ -70,7 +81,9 @@ function HomePage() {
       </BaseBlock>
 
       <BaseBlock customClasses="row-span-2 col-span-1">
-        <img src=""/>
+        <div className="flex items-center justify-center h-full w- p-6">
+          <img src="icon_logo.png" />
+        </div>
       </BaseBlock>
     </div>
   );
