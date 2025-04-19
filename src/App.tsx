@@ -10,7 +10,7 @@ import ProjectsPage from "./ProjectsPage";
 function App() {
   return (
     <BrowserRouter>
-      <div className="mx-4 flex flex-col min-h-screen h-auto">
+      <div className="min-h-screen h-auto p-4 max-w-7xl m-auto overflow-hidden 2xl:overflow-visible">
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />

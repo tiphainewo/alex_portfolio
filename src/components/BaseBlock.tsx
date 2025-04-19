@@ -6,8 +6,17 @@ type BaseBlockProps = {
   link?: string;
 };
 // https://ui.aceternity.com/components/background-gradient-animation
-export default function BaseBlock({ children, customClasses, link }: BaseBlockProps) {
+export default function BaseBlock({
+  children,
+  customClasses,
+  link,
+}: BaseBlockProps) {
   return (
-    <div className={`bg-purple rounded-lg overflow-clip ${customClasses}`} href={link}>{children}</div>
+    <div
+      className={`bg-white shadow-custom rounded-lg overflow-clip ${customClasses}`}
+      href={link}
+    >
+      {children}
+    </div>
   );
 }
