@@ -52,6 +52,7 @@ body {
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-cream);
+  color: var(--color-black);
 }
 
 /* 5. Improve media defaults */

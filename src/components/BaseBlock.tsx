@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { useNavigate } from "react-router";
 
 type BaseBlockProps = {
   children: ReactNode;
@@ -11,10 +12,17 @@ export default function BaseBlock({
   customClasses,
   link,
 }: BaseBlockProps) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (!link) return;
+    navigate(link);
+  };
+
   return (
     <div
       className={`bg-white shadow-custom rounded-lg overflow-clip ${customClasses}`}
-      href={link}
+      onClick={handleClick}
     >
       {children}
     </div>

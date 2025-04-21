@@ -15,16 +15,16 @@ export default function SocialBlock({ icon, link, title }: SocialBlockProps) {
     <a href={link} target="_blank" title={title}>
       {/* <img src={`src/assets/${icon}.svg`} className="!text-cyan h-full" /> */}
       {icon == "x" && (
-        <TwitterIcon className="fill-black hover:fill-cyan h-full" />
+        <TwitterIcon className="fill-black hover:fill-cyan h-full transition-colors ease-in-out duration-300" />
       )}
       {icon == "instagram" && (
-        <InstagramIcon className="fill-black hover:fill-red h-full" />
+        <InstagramIcon className="fill-black hover:fill-red h-full transition-colors  ease-in-out duration-300" />
       )}
       {icon == "bluesky" && (
-        <BlueskyIcon className="fill-black hover:fill-purple h-full" />
+        <BlueskyIcon className="fill-black hover:fill-purple h-full transition-colors  ease-in-out duration-300" />
       )}
       {icon == "artstation" && (
-        <ArtstationIcon className="fill-black hover:fill-yellow h-full" />
+        <ArtstationIcon className="fill-black hover:fill-yellow h-full transition-colors ease-in-out duration-300" />
       )}
     </a>
   );

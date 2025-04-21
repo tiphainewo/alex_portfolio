@@ -13,7 +13,7 @@ function HeaderChoice({ title, link }: { title: string; link: string }) {
       </NavLink>
       <div
         className={`z-0 absolute bottom-0 bg-yellow rounded-full w-6 transition-all ease-in-out duration-400 ${
-          location.pathname === link ? "h-2 " : "h-0 group-hover:h-2"
+          location.pathname === link ? "h-2.5 " : "h-0 group-hover:h-2"
         }`}
       ></div>
     </div>
