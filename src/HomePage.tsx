@@ -78,8 +78,17 @@ function HomePage() {
         </div>
       </BaseBlock>
 
-      <BaseBlock customClasses="hidden lg:block row-span-1 col-span-2">
-        <div>little filler</div>
+      <BaseBlock customClasses="hidden lg:block row-span-1 col-span-2 max-h-full">
+        <div className="group max-h-full relative">
+          <img
+            src="src/assets/filler.png"
+            className="group-hover:opacity-0 absolute w-full translate-y-[-30%]"
+          />
+          <img
+            src="src/assets/filler.gif"
+            className="opacity-0 group-hover:opacity-100 absolute w-full translate-y-[-30%]"
+          />
+        </div>
       </BaseBlock>
     </div>
   );

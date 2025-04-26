@@ -24,7 +24,7 @@ function BlockContentImage({
     <div
       className="group h-full w-full flex items-end justify-start relative bg-cover cursor-pointer"
       style={{
-        backgroundImage: `linear-gradient(0deg, rgba(46,54,77,1) 0%, rgba(46,54,77,0.34) 17%, rgba(46,54,77,0) 33%)`,
+        backgroundImage: `linear-gradient(0deg, rgba(46,54,77,1) 0%, rgba(46,54,77,0.34) 25%, rgba(46,54,77,0) 50%)`,
       }}
     >
       {/* <div className={shadowed && "bg-black opacity-15"}></div> */}

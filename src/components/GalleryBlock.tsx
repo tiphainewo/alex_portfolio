@@ -7,7 +7,7 @@ function GalleryBlock() {
   const categories = [
     { id: "gameArt", label: "Game art", image: "game_art.png" },
     { id: "landscapes", label: "Landscapes", image: "landscape_art.jpg" },
-    { id: "otherStuff", label: "Other stuff", image: "other_stuff_art.jpg" },
+    { id: "otherStuff", label: "Other stuff", image: "other_stuff_art.png" },
   ];
 
   return (
