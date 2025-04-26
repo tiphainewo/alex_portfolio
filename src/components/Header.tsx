@@ -3,7 +3,7 @@ import SocialBlock from "./SocialBlock";
 
 function Header() {
   return (
-    <div className="grid grid-cols-3 grid-rows-1 bg-white p-1 pl-4 pr-8 rounded-full gap-10 h-14 items-center justify-between shadow-custom">
+    <div className="grid grid-cols-3 grid-rows-1 bg-white p-1 px-4 rounded-full gap-10 h-14 items-center justify-between shadow-custom">
       <img src="src/assets/icon_logo.png" className="max-h-full" />
       <div className="flex gap-6 items-baseline">
         <HeaderChoice title={"Home"} link={"/"} />

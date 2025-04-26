@@ -24,7 +24,7 @@ function GalleryBlock() {
       <div className="absolute right-0 bottom-0 text-white items-end flex flex-col p-4 gap-1">
         {categories.map((category) => {
           return (
-            <div className="relative">
+            <div className="relative" key={category.id}>
               <p
                 className={`relative z-10 uppercase cursor-pointer hover:font-semibold ${
                   selectedCategory == category.id && "font-semibold"
