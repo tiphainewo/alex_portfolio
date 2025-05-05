@@ -4,6 +4,7 @@ import BlockContentImage from "./components/BlockContentImage";
 import ContactBlock from "./components/ContactBlock";
 import FillerBlock from "./components/FillerBlock";
 import GalleryBlock from "./components/GalleryBlock";
+import ParallaxBlock from "./components/ParallaxBlock";
 
 function HomePage() {
   return (
@@ -13,10 +14,7 @@ function HomePage() {
       </BaseBlock>
 
       <BaseBlock customClasses="row-span-1 lg:row-span-5 lg:col-span-4 lg:aspect-video">
-        <img
-          src="src/assets/hero_art.png"
-          className="h-full w-full object-cover"
-        />
+        <ParallaxBlock />
       </BaseBlock>
 
       <BaseBlock
