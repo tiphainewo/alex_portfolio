@@ -7,7 +7,7 @@ export default function BaseBlock() {
       <div className=" absolute rounded-full bg-purple w-40 h-26 -right-8 -bottom-10"></div>
       <div className=" absolute rounded-full bg-yellow w-36 h-26 -right-10 -top-10 animate-infinite animate-ease-in-out"></div>
 
-      <div className="absolute top-0 bottom-0 w-full h-full bg-cream/50 backdrop-blur-3xl">
+      <div className="absolute top-0 bottom-0 w-full h-full bg-white/50 backdrop-blur-3xl">
         {" "}
       </div>
 
