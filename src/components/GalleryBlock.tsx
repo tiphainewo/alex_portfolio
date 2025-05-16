@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import BlockContentImage from "./BlockContentImage";
 
@@ -16,7 +17,7 @@ function GalleryBlock() {
         title="Gallery"
         titleColor="cyan"
         shadowed
-        image={`src/assets/${
+        image={`/${
           categories.find((category) => category.id == selectedCategory)?.image
         }`}
       />

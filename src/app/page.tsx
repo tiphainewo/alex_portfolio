@@ -1,10 +1,10 @@
-import AboutBlock from "./components/AboutBlock";
-import BaseBlock from "./components/BaseBlock";
-import BlockContentImage from "./components/BlockContentImage";
-import ContactBlock from "./components/ContactBlock";
-import FillerBlock from "./components/FillerBlock";
-import GalleryBlock from "./components/GalleryBlock";
-import ParallaxBlock from "./components/ParallaxBlock";
+import AboutBlock from "../components/AboutBlock";
+import BaseBlock from "../components/BaseBlock";
+import BlockContentImage from "../components/BlockContentImage";
+import ContactBlock from "../components/ContactBlock";
+import FillerBlock from "../components/FillerBlock";
+import GalleryBlock from "../components/GalleryBlock";
+import ParallaxBlock from "../components/ParallaxBlock";
 
 function HomePage() {
   return (
@@ -33,7 +33,7 @@ function HomePage() {
           titleColor="red"
           tickPosition="end"
           shadowed
-          image="src/assets/projects_art.jpg"
+          image="/projects_art.jpg"
         />
       </BaseBlock>
 
@@ -45,7 +45,7 @@ function HomePage() {
           title="Shop"
           titleColor="yellow"
           shadowed
-          image="src/assets/game_art.png"
+          image="/game_art.png"
         />
       </BaseBlock>
 

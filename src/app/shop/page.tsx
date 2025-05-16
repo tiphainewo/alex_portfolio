@@ -1,6 +1,6 @@
-import BaseBlock from "./components/BaseBlock";
+import BaseBlock from "../../components/BaseBlock";
 
-function ContactPage() {
+function ShopPage() {
   return (
     <div className="grid w-full flex-1 my-4">
       <BaseBlock>
@@ -12,4 +12,4 @@ function ContactPage() {
   );
 }
 
-export default ContactPage;
+export default ShopPage;

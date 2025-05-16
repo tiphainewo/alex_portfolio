@@ -1,5 +1,6 @@
+"use client"
 import { ReactNode } from "react";
-import { useNavigate } from "react-router";
+import { useRouter } from 'next/navigation'
 
 type BaseBlockProps = {
   children: ReactNode;
@@ -12,11 +13,11 @@ export default function BaseBlock({
   customClasses,
   link,
 }: BaseBlockProps) {
-  const navigate = useNavigate();
 
+  const router = useRouter()
   const handleClick = () => {
     if (!link) return;
-    navigate(link);
+    router.push(link);
   };
 
   return (

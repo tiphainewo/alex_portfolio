@@ -1,13 +1,15 @@
-import { useNavigate } from "react-router-dom";
+"use client"
+import { useRouter } from 'next/navigation'
 import UiButton from "./UiButton";
 import UiTitle from "./UiTitle";
-import ArrowIcon from "src/assets/arrow.svg?react";
+import ArrowIcon from "../../public/arrow.svg"
+import Image from 'next/image';
 
 export default function ContactBlock() {
-  const navigate = useNavigate();
+  const router = useRouter()
 
   const handleClick = () => {
-    navigate("/contact");
+    router.push("/contact");
   };
 
   return (
@@ -27,9 +29,12 @@ export default function ContactBlock() {
           </UiButton>
         </div>
 
-        <img
-          src="src/assets/hello_emote.png"
-          className="absolute object-contain h-full right-0 bottom-0"
+        <Image
+          src="/hello_emote.png"
+          className="absolute object-contain h-full right-0 bottom-0 w-auto"
+          alt=""
+          height={470}
+          width={360}
         />
       </div>
     </div>

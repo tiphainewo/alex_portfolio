@@ -1,3 +1,5 @@
+"use client"
+import Image from "next/image";
 import { useState } from "react";
 
 export default function FillerBlock() {
@@ -10,14 +12,21 @@ export default function FillerBlock() {
       onMouseLeave={() => setPlayGif(false)}
     >
       {playGif ? (
-        <img
-          src="src/assets/filler.gif"
+        <Image
+          src="/filler.gif"
           className="absolute w-full translate-y-[-30%]"
+          alt=""
+          height={400}
+          width={800}
+          unoptimized
         />
       ) : (
-        <img
-          src="src/assets/filler.png"
+        <Image
+          src="/filler.png"
           className="absolute w-full translate-y-[-30%]"
+          alt=""
+          height={400}
+          width={800}
         />
       )}
     </div>

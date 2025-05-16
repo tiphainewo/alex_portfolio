@@ -1,8 +1,8 @@
 /// <reference types="vite-plugin-svgr/client" />
-import TwitterIcon from "src/assets/x.svg?react";
-import InstagramIcon from "src/assets/instagram.svg?react";
-import BlueskyIcon from "src/assets/bluesky.svg?react";
-import ArtstationIcon from "src/assets/artstation.svg?react";
+import TwitterIcon from "../../public/socials/x.svg";
+import InstagramIcon from "../../public/socials/instagram.svg";
+import BlueskyIcon from "../../public/socials/bluesky.svg";
+import ArtstationIcon from "../../public/socials/artstation.svg";
 
 type SocialBlockProps = {
   icon: string;
@@ -12,8 +12,7 @@ type SocialBlockProps = {
 
 export default function SocialBlock({ icon, link, title }: SocialBlockProps) {
   return (
-    <a href={link} target="_blank" title={title}>
-      {/* <img src={`src/assets/${icon}.svg`} className="!text-cyan h-full" /> */}
+    <a href={link} target="_blank" title={title} className="">
       {icon == "x" && (
         <TwitterIcon className="fill-black hover:fill-cyan h-full transition-colors ease-in-out duration-300" />
       )}

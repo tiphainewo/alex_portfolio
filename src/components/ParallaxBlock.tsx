@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function ParallaxBlock() {
@@ -9,7 +11,6 @@ export default function ParallaxBlock() {
   ]);
 
   function parallax(event: MouseEvent) {
-
     const container = event.currentTarget;
     if (!container) return;
     const rect = container.getBoundingClientRect();
@@ -17,16 +18,15 @@ export default function ParallaxBlock() {
     const centerY = rect.height / 2;
     const mouseX = event.clientX - rect.left;
     const mouseY = event.clientY - rect.top;
-    
+
     const newParallaxTransform = parallaxTransform.map((transform, index) => {
-      const x = (mouseX - centerX) * ((index+1)*0.02);
-      const y = (mouseY - centerY) * ((index+1)*0.02);
-    
+      const x = (mouseX - centerX) * ((5 - index) * 0.015);
+      const y = (mouseY - centerY) * ((5 - index) * 0.015);
 
       return `translateX(${x}px) translateY(${y}px)`;
     });
 
-    console.log(newParallaxTransform)
+    console.log(newParallaxTransform);
 
     setParallaxTransform(newParallaxTransform);
   }
@@ -36,25 +36,53 @@ export default function ParallaxBlock() {
       className="parallax-wrap bg-cream relative h-full w-full"
       onMouseMove={parallax}
     >
-      <img
-        src="src/assets/parallax_landscape/4.png"
+      <Image
+        src="/parallax_landscape/sun.png"
+        className="absolute bottom-70 left-10 w-auto object-contain scale-110"
+        style={{ transform: `${parallaxTransform[3]}` }}
+        alt=""
+        height={148}
+        width={148}
+      />
+      <Image
+        src="/parallax_landscape/4.png"
         className="absolute -bottom-0 w-full object-contain scale-110"
         style={{ transform: `${parallaxTransform[3]}` }}
+        alt=""
+        height={1488}
+        width={2560}
       />
-      <img
-        src="src/assets/parallax_landscape/3.png"
+      <Image
+        src="/parallax_landscape/3.png"
         className="absolute -bottom-0 w-full object-contain scale-110"
         style={{ transform: `${parallaxTransform[2]}` }}
+        alt=""
+        height={1488}
+        width={2560}
       />
-      <img
-        src="src/assets/parallax_landscape/2.png"
+      <Image
+        src="/parallax_landscape/Logo_illu.png"
+        className="absolute bottom-50 right-1/2 top-1/6 w-auto h-auto object-contain scale-110 translate-x-1/2"
+        style={{ transform: `${parallaxTransform[2]}` }}
+        alt=""
+        height={348}
+        width={420}
+      />
+      <Image
+        src="/parallax_landscape/2.png"
         className="absolute -bottom-0 w-full object-contain scale-110"
         style={{ transform: `${parallaxTransform[1]}` }}
+        alt=""
+        height={1488}
+        width={2560}
       />
-      <img
-        src="src/assets/parallax_landscape/1.png"
+      <Image
+        src="/parallax_landscape/1.png"
         className="absolute -bottom-40 w-full object-contain scale-110"
         style={{ transform: `${parallaxTransform[0]}` }}
+        alt=""
+        height={1488}
+        width={2560}
       />
     </div>
   );

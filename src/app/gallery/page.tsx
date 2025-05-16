@@ -1,5 +1,5 @@
-import BaseBlock from "./components/BaseBlock";
-import GalleryChoicesCarousel from "./components/GalleryChoicesCarousel";
+import GalleryChoicesCarousel from "../../components/GalleryChoicesCarousel";
+// import gameArtGif from "game_art/game_art_1.gif"
 
 function GalleryPage() {
   return (
@@ -17,7 +17,7 @@ function GalleryPage() {
             <div className="rounded-lg bg-cream grow">description</div>
           </div>
           <div className="bg-purple rounded-lg overflow-hidden">
-            <img src="game_art/game_art_1.gif" />
+            {/* <Image src={gameArtGif.src}/> */}
           </div>
 
         </div>
