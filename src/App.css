@@ -14,6 +14,8 @@
   --font-sans: "Lexend";
 
   --shadow-custom: 0px 3px 10px rgba(224, 213, 181, 0.5);
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 140rem;
 }
 
 :root {

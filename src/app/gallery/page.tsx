@@ -1,27 +1,50 @@
-import GalleryChoicesCarousel from "../../components/GalleryChoicesCarousel";
-// import gameArtGif from "game_art/game_art_1.gif"
+import GallerySection from "./components/GallerySection";
 
 function GalleryPage() {
+  const game_art_images = [
+    {
+      id: 1,
+      src: "/gallery/game_art/1.png",
+      title: "RPG Assets",
+      description:
+        "Assets that I’m building as a personal project.\nThe aim is to create a bright and warm place that you'd like to explore",
+    },
+    {
+      id: 2,
+      src: "/gallery/game_art/2.png",
+      title: "MiniKnight Mockup",
+      description:
+        "Here's a mock-up I made in 2022. It's inspired by dungeon crawlers like “The Binding of Isaac”.\n\nMy goal was to practice this kind of perspective.",
+    },
+    {
+      id: 3,
+      src: "/gallery/game_art/3.png",
+      title: "Side-view dungeon assets",
+      description:
+        "This is one of my Itch.io asset packs.\nThe pack is relatively low-key, which makes the scenery pop and even more so for the only coloured elements, the collectibles.",
+    },
+    {
+      id: 4,
+      src: "/gallery/game_art/4.png",
+      title: "Skull Archipelago",
+      description:
+        "I made this for a monthly challenge, “Pixel encore”.\nThe aim was to give it a treasure map and video game map look.",
+    },
+    {
+      id: 5,
+      src: "/gallery/game_art/5.png",
+      title: "The abandoned building",
+      description:
+        "Here's an example of the kind of building I can do.\nThe biggest challenge was to render the roof tiles while maintaining a blocky style.",
+    },
+  ];
   return (
     <div className="w-full flex-1 my-4">
-      <div>
-        <div>
-          <p className="text-xl">Game art</p>
-          <div className="h-1 w-6 bg-purple rounded-full"></div>
-        </div>
-
-        <div className="w-full flex  gap-6">
-          <div className="min-w-2/5 grow flex flex-col gap-6">
-            <GalleryChoicesCarousel folder="game_art"/>
-            <div className="bg-purple rounded-lg">Liste</div>
-            <div className="rounded-lg bg-cream grow">description</div>
-          </div>
-          <div className="bg-purple rounded-lg overflow-hidden">
-            {/* <Image src={gameArtGif.src}/> */}
-          </div>
-
-        </div>
-      </div>
+      <GallerySection
+        title="Game art"
+        type="game_art"
+        images={game_art_images}
+      />
     </div>
   );
 }

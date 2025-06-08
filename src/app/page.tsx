@@ -8,7 +8,7 @@ import ParallaxBlock from "../components/ParallaxBlock";
 
 function HomePage() {
   return (
-    <div className="grid w-full grid-cols-1 lg:grid-cols-6 lg:grid-rows-7 gap-4 my-4 flex-1 min-h-0 min-w-0">
+    <div className="grid w-full grid-cols-1 lg:grid-cols-6 lg:grid-rows-7 gap-4 my-4 flex-1 min-h-0 min-w-0 lg:h-fit ">
       <BaseBlock customClasses="row-span-1 lg:row-span-2 lg:col-span-2">
         <AboutBlock />
       </BaseBlock>
@@ -45,7 +45,7 @@ function HomePage() {
           title="Shop"
           titleColor="yellow"
           shadowed
-          image="/game_art.png"
+          image="/shop_art.png"
         />
       </BaseBlock>
 

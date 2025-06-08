@@ -38,11 +38,11 @@ export default function ParallaxBlock() {
     >
       <Image
         src="/parallax_landscape/sun.png"
-        className="absolute bottom-70 left-10 w-auto object-contain scale-110"
+        className="absolute -bottom-0 w-full object-contain scale-110"
         style={{ transform: `${parallaxTransform[3]}` }}
         alt=""
-        height={148}
-        width={148}
+        height={1488}
+        width={2560}
       />
       <Image
         src="/parallax_landscape/4.png"
@@ -61,12 +61,12 @@ export default function ParallaxBlock() {
         width={2560}
       />
       <Image
-        src="/parallax_landscape/Logo_illu.png"
-        className="absolute bottom-50 right-1/2 top-1/6 w-auto h-auto object-contain scale-110 translate-x-1/2"
+        src="/parallax_landscape/logo_illu.png"
+        className="absolute -bottom-0 w-full object-contain scale-110"
         style={{ transform: `${parallaxTransform[2]}` }}
         alt=""
-        height={348}
-        width={420}
+        height={1488}
+        width={2560}
       />
       <Image
         src="/parallax_landscape/2.png"
@@ -78,7 +78,7 @@ export default function ParallaxBlock() {
       />
       <Image
         src="/parallax_landscape/1.png"
-        className="absolute -bottom-40 w-full object-contain scale-110"
+        className="absolute -bottom-0 w-full object-contain scale-110"
         style={{ transform: `${parallaxTransform[0]}` }}
         alt=""
         height={1488}
