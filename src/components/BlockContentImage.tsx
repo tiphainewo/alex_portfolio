@@ -30,9 +30,9 @@ function BlockContentImage({
     >
       {/* <div className={shadowed && "bg-black opacity-15"}></div> */}
 
-      <div className="h-full w-full relative group-hover:scale-102 transition-all duration-500">
+      <div className="h-full w-full relative group-hover:scale-102 transition-all duration-500 ease-in-out">
         {shadowed && (
-          <div className="absolute z-10 inset-0 bg-linear-to-t from-black/70 to-black/0 to-20% group-hover:translate-y-5 transition-all duration-500"></div>
+          <div className="absolute z-10 inset-0 bg-linear-to-t from-black/70 to-black/0 to-20% ease-in-out group-hover:translate-y-5 transition-all duration-500"></div>
         )}
         <Image
           src={image}

@@ -84,6 +84,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
   hyphens: auto;
+  white-space: pre-wrap;
 }
 
 /* 8. Improve line wrapping */
