@@ -1,12 +1,12 @@
-"use client"
-import { useRouter } from 'next/navigation'
+"use client";
+import { useRouter } from "next/navigation";
 import UiButton from "./UiButton";
 import UiTitle from "./UiTitle";
-import ArrowIcon from "../../public/arrow.svg"
-import Image from 'next/image';
+import ArrowIcon from "../../public/arrow.svg";
+import Image from "next/image";
 
 export default function ContactBlock() {
-  const router = useRouter()
+  const router = useRouter();
 
   const handleClick = () => {
     router.push("/contact");
@@ -21,7 +21,7 @@ export default function ContactBlock() {
       <div className="relative flex justify-between items-end grow max-h-full">
         <div className="flex flex-col justify-between h-full">
           <p>My commissions are open !</p>
-          <UiButton onClick={handleClick}>
+          <UiButton click={handleClick}>
             <div className="flex gap-2">
               <ArrowIcon className="fill-purple" />
               Contact me
