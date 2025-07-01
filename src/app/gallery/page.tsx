@@ -9,7 +9,6 @@ import {
   other_images,
 } from "./components/galleryImages";
 import OpenInNewIcon from "../../../public/open_in_new.svg";
-import ArrowIcon from "../../../public/arrow.svg";
 
 function GalleryPage() {
   return (

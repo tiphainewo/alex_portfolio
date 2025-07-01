@@ -8,7 +8,8 @@ export const projects: Project[] = [
       "/projects/assets_pack/2.png",
       "/projects/assets_pack/3.png",
     ],
-    description: "description",
+    description:
+      "Hello, here is a text about the drawing just above. \nVery interesting waw, I do have lots of things to talk about\nSee on Itch.io",
     title: "Assets pack",
     tags: [
       {

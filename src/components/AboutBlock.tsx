@@ -1,7 +1,7 @@
 // https://ui.aceternity.com/components/background-gradient-animation
 /* https://www.youtube.com/watch?v=Ml-B-W91gtw&t=6s */
 
-export default function BaseBlock() {
+export default function AboutBlock() {
   return (
     <div className="relative h-full">
       <div className=" absolute rounded-full bg-purple w-40 h-26 -right-8 -bottom-10"></div>
