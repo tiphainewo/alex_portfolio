@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import BlockContentImage from "./BlockContentImage";
 
@@ -22,7 +22,7 @@ function GalleryBlock() {
         }`}
       />
 
-      <div className="absolute right-0 bottom-0 text-white items-end flex flex-col p-4 gap-1">
+      <div className="absolute right-0 bottom-0 text-white items-end flex flex-col p-4 gap-1 z-10">
         {categories.map((category) => {
           return (
             <div className="relative" key={category.id}>

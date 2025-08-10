@@ -4,8 +4,14 @@ import SocialBlock from "./SocialBlock";
 
 function Header() {
   return (
-    <div className="grid grid-cols-3 grid-rows-1 bg-white p-1 px-4 rounded-full gap-10 h-14 items-center justify-between shadow-custom">
-      <Image src="/icon_logo.png" className="max-h-full w-auto aspect-square" alt="" height={536} width={536} />
+    <div className="grid grid-cols-3 grid-rows-1 bg-white p-1 pr-8 pl-4 rounded-full gap-10 h-15 items-center justify-between shadow-custom">
+      <Image
+        src="/icon_logo.png"
+        className="max-h-full w-auto aspect-square"
+        alt=""
+        height={536}
+        width={536}
+      />
       <div className="flex gap-6 items-baseline">
         <HeaderChoice title={"Home"} link={"/"} />
         <HeaderChoice title={"Gallery"} link={"/gallery"} />
@@ -13,7 +19,7 @@ function Header() {
         <HeaderChoice title={"Shop"} link={"/shop"} />
         <HeaderChoice title={"Contact"} link={"/contact"} />
       </div>
-      <div className="flex h-6 w-full justify-end gap-3">
+      <div className="flex h-6 w-full justify-end gap-4">
         <SocialBlock
           icon="x"
           link="https://x.com/xeleph_"

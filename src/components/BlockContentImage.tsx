@@ -32,17 +32,18 @@ function BlockContentImage({
 
       <div className="h-full w-full relative group-hover:scale-102 transition-all duration-500 ease-in-out">
         {shadowed && (
-          <div className="absolute z-10 inset-0 bg-linear-to-t from-black/70 to-black/0 to-20% ease-in-out group-hover:translate-y-5 transition-all duration-500"></div>
+          <div className="absolute z-1 inset-0 bg-linear-to-t from-black/70 to-black/0 to-20% ease-in-out group-hover:translate-y-5 transition-all duration-500"></div>
         )}
         <Image
           src={image}
           className="h-full w-full object-cover transition-all"
           alt=""
           fill={true}
+          quality={90}
         />
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 p-4">
+      <div className="absolute inset-x-0 bottom-0 p-4 z-10">
         <UiTitle
           title={title}
           variant="white"
