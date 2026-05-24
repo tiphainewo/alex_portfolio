@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import { ReactNode } from "react";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 type BaseBlockProps = {
   children: ReactNode;
@@ -13,8 +13,7 @@ export default function BaseBlock({
   customClasses,
   link,
 }: BaseBlockProps) {
-
-  const router = useRouter()
+  const router = useRouter();
   const handleClick = () => {
     if (!link) return;
     router.push(link);
@@ -22,7 +21,7 @@ export default function BaseBlock({
 
   return (
     <div
-      className={`bg-white shadow-custom rounded-lg overflow-clip ${customClasses}`}
+      className={`bg-white shadow-custom rounded-lg overflow-clip outline-1' ${customClasses}`}
       onClick={handleClick}
     >
       {children}

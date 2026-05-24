@@ -12,6 +12,7 @@
   --color-white: oklch(100% 0 0);
 
   --font-sans: "Lexend";
+  --font-pixel: var(--font-pixellari);
 
   --shadow-custom: 0px 3px 10px rgba(224, 213, 181, 0.5);
   --breakpoint-3xl: 120rem;

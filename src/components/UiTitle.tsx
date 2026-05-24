@@ -26,7 +26,7 @@ function UiTitle({
         } ${tickPosition == "end" ? "-right-2" : "-left-1"}`}
       ></div>
       <p
-        className={`text-2xl z-10 relative font-medium ${
+        className={`text-2xl z-10 relative font-medium font-pixel ${
           variant == "white" && "text-white"
         }`}
       >
