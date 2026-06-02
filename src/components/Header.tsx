@@ -4,7 +4,7 @@ import SocialBlock from "./SocialBlock";
 
 function Header() {
   return (
-    <div className="grid grid-cols-3 grid-rows-1 bg-white outline-1 p-1 pr-8 pl-4 rounded-full gap-10 h-15 items-center justify-between shadow-custom">
+    <div className="grid grid-cols-3 grid-rows-1 bg-white p-1 pr-8 pl-4 rounded-full gap-10 h-15 items-center justify-between outline">
       <Image
         src="/icon_logo.png"
         className="max-h-full w-auto aspect-square"

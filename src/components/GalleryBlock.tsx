@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import BlockContentImage from "./BlockContentImage";
+import BaseBlockContent from "./BaseBlockContent";
 
 function GalleryBlock() {
   const [selectedCategory, setSelectedCategory] = useState("gameArt");
@@ -12,38 +13,39 @@ function GalleryBlock() {
   ];
 
   return (
-    <div className="w-full h-full relative cursor-pointer">
-      <BlockContentImage
-        title="Gallery"
-        titleColor="cyan"
-        shadowed
-        image={`/${
-          categories.find((category) => category.id == selectedCategory)?.image
-        }`}
-      />
+    <BaseBlockContent title="Gallery" color="cyan">
+      <div className="w-full h-full relative cursor-pointer">
+        <BlockContentImage
+          shadowed
+          image={`/${
+            categories.find((category) => category.id == selectedCategory)
+              ?.image
+          }`}
+        />
 
-      <div className="absolute right-0 bottom-0 text-white items-end flex flex-col p-4 gap-1 z-10">
-        {categories.map((category) => {
-          return (
-            <div className="relative" key={category.id}>
-              <p
-                className={`relative z-10 uppercase cursor-pointer hover:font-semibold ${
-                  selectedCategory == category.id && "font-semibold"
-                }`}
-                onMouseEnter={() => setSelectedCategory(category.id)}
-              >
-                {category.label}
-              </p>
-              {selectedCategory == category.id && (
-                <div
-                  className={`z-0 absolute -right-2 bottom-0.5 rounded-full w-5 h-2.5 bg-purple `}
-                ></div>
-              )}
-            </div>
-          );
-        })}
+        <div className="absolute right-0 bottom-0 text-white items-end flex flex-col p-4 gap-1 z-10">
+          {categories.map((category) => {
+            return (
+              <div className="relative" key={category.id}>
+                <p
+                  className={`relative z-10 uppercase cursor-pointer hover:font-semibold ${
+                    selectedCategory == category.id && "font-semibold"
+                  }`}
+                  onMouseEnter={() => setSelectedCategory(category.id)}
+                >
+                  {category.label}
+                </p>
+                {selectedCategory == category.id && (
+                  <div
+                    className={`z-0 absolute -right-2 bottom-0.5 rounded-full w-5 h-2.5 bg-purple `}
+                  ></div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </BaseBlockContent>
   );
 }
 

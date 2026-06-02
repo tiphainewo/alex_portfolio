@@ -9,7 +9,7 @@ export default function UiButton({ children, click }: UiButtonProps) {
   return (
     // TODO Button animation
     <div
-      className="border-purple rounded-full border-2 border-b-4 text-purple p-2 px-6 hover:border-b-3 cursor-pointer transition-all w-fit"
+      className=" border-b-purple rounded-full border-2 border-b-4 p-1.5 px-3 hover:border-b-3 cursor-pointer transition-all w-fit border-black"
       onMouseDown={click}
     >
       {children}

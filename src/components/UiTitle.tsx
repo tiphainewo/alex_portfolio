@@ -19,14 +19,10 @@ function UiTitle({
   };
 
   return (
-    <div className="relative w-fit">
-      <div
-        className={`z-0 absolute bottom-0.5 rounded-full w-5 h-2.5 ${
-          colorVariants[color]
-        } ${tickPosition == "end" ? "-right-2" : "-left-1"}`}
-      ></div>
+    <div className="relative w-fit flex items-center gap-3">
+      <div className={`h-4 aspect-square ${colorVariants[color]}`}></div>
       <p
-        className={`text-2xl z-10 relative font-medium font-pixel ${
+        className={`text-2xl z-10 relative font-pixel ${
           variant == "white" && "text-white"
         }`}
       >

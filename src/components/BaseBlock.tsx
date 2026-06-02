@@ -21,7 +21,7 @@ export default function BaseBlock({
 
   return (
     <div
-      className={`bg-white shadow-custom rounded-lg overflow-clip outline-1' ${customClasses}`}
+      className={`bg-white rounded-lg overflow-clip outline-1 outline-black' ${customClasses}`}
       onClick={handleClick}
     >
       {children}
